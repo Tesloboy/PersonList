@@ -11,11 +11,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         title = person.contact
-
+        
         if let person = person {
             phoneLabel.text = "Phone: \(person.phone)"
             emailLabel.text = "Email: \(person.email)"
         }
     }
-
+    
 }

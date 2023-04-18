@@ -16,6 +16,7 @@
 		CA5DBCD929E565460048BD59 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5DBCD829E565460048BD59 /* ContactsTableViewController.swift */; };
 		CAA4F20429E5523C0009E844 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4F20329E5523C0009E844 /* PersonListViewController.swift */; };
 		CAA4F20629E552B70009E844 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4F20529E552B70009E844 /* DetailViewController.swift */; };
+		CAE3F50E29E8DE4F0098B1EA /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE3F50D29E8DE4F0098B1EA /* HeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CA5DBCD829E565460048BD59 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		CAA4F20329E5523C0009E844 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 		CAA4F20529E552B70009E844 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = PersonList/ViewControllers/DetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		CAE3F50D29E8DE4F0098B1EA /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		CA5B7C2429E3F6650084E3BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CAE3F50D29E8DE4F0098B1EA /* HeaderCell.swift */,
 				CA5B7C2829E3FAD30084E3BA /* Person.swift */,
 				CA5B7C1729E3F6070084E3BA /* Assets.xcassets */,
 			);
@@ -185,6 +188,7 @@
 				CA5B7C2929E3FAD30084E3BA /* Person.swift in Sources */,
 				CA5B7C1129E3F6060084E3BA /* SceneDelegate.swift in Sources */,
 				CAA4F20429E5523C0009E844 /* PersonListViewController.swift in Sources */,
+				CAE3F50E29E8DE4F0098B1EA /* HeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

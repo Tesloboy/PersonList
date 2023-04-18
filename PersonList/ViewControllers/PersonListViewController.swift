@@ -1,10 +1,3 @@
-//
-//  PersonListViewControllerV2TableViewController.swift
-//  PersonList
-//
-//  Created by Viktor Teslenko on 11.04.2023.
-//
-
 import UIKit
 
 class PersonListViewController: UIViewController {
@@ -19,10 +12,10 @@ class PersonListViewController: UIViewController {
         
     }
     
-
-
+    
+    
     // MARK: - Table view data source
-
+    
 }
 extension PersonListViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -34,18 +27,19 @@ extension PersonListViewController: UITableViewDataSource, UITableViewDelegate {
         viewController.person = people[indexPath.row]
     }
     
-func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return people.count
-}
-
- func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-            let person = people[indexPath.row]
-    cell.textLabel?.text = "\(person.firstName) \(person.lastName)"
-     cell.textLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
-            return cell
-}
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return people.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let person = people[indexPath.row]
+        cell.textLabel?.text = person.contact //"\(person.firstName) \(person.lastName)"
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+        cell.imageView?.image = UIImage(systemName: "phone")
+        return cell
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }

@@ -1,10 +1,3 @@
-//
-//  Person.swift
-//  PersonList
-//
-//  Created by Viktor Teslenko on 10.04.2023.
-//
-
 struct Person {
     let firstName: String
     let lastName: String
